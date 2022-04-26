@@ -14,10 +14,33 @@ body {
   color: #0f0028;
 }
 
+.backgroundImage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+}
+
 .title {
   width: fit-content;
   margin: 25px auto;
   font-size: 6rem;
+}
+
+.aboutSection {
+  font-size: 1.8rem;
+  max-width: 725px;
+  width: 55%;
+  min-width: 325px;
+  margin: 15px auto;
+  text-align: center;
+  background-image: url("../public/box-outline.svg");
+  background-size: 100% 100%;
+  background-position: top left;
+  height: fit-content;
+  padding: 10px 20px 40px;
 }
 
 .footerContainer {
@@ -61,6 +84,10 @@ body {
     height: 150px;
   }
 
+  .aboutSection {
+    font-size: 1.5rem;
+  }
+
   .title {
     font-size: 4rem;
   }
@@ -68,6 +95,11 @@ body {
 @media only screen and (max-width: 450px) {
   .footerContainer {
     font-size: 1.2rem;
+  }
+
+  .aboutSection {
+    font-size: 1.2rem;
+    padding: 10px 5px 40px;
   }
 }
 
