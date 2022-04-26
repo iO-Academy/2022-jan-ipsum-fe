@@ -1,8 +1,12 @@
 import './App.scss';
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
-    <p>Hello</p>
+      <div>
+        <p>Hello</p>
+        <Footer/>
+      </div>
   );
 }
 
