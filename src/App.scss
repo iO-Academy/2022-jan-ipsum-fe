@@ -1,0 +1,71 @@
+$font: 'Space Grotesk', sans-serif;
+$footerBg: #0f0028;
+$generateButtonColor: #61fed2;
+$bodyBackground: #e6edf5;
+$plusButton: #ff3366;
+$minusButton: #fdc0d0;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  font-family: $font;
+  font-weight: 400;
+}
+
+body {
+  background-color: $bodyBackground;
+}
+
+.footerContainer {
+  width: 100%;
+  background-color: $footerBg;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+
+  p {
+    margin: 15px auto;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 45%;
+    margin: 0 auto;
+    border-top: white solid 1px;
+    padding-top: 10px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      margin: 5px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    margin: 25px auto;
+    color: $generateButtonColor;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .footerContainer {
+    font-size: 1.6rem;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footerContainer {
+    font-size: 1.3rem;
+  }
+}

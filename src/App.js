@@ -1,12 +1,12 @@
-import './App.scss';
+import './App.css';
+import './normalize.css'
 import Footer from "./Footer/Footer";
 
 function App() {
   return (
-      <div>
-        <p>Hello</p>
+      <>
         <Footer/>
-      </div>
+      </>
   );
 }
 
