@@ -1,8 +1,14 @@
-import './App.scss';
+import './App.css';
+import './normalize.css'
+import Footer from "./Footer/Footer";
+import Title from "./Title/Title";
 
 function App() {
   return (
-    <p>Hello</p>
+      <>
+        <Title />
+        <Footer />
+      </>
   );
 }
 
