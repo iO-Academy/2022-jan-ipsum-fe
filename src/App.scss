@@ -4,6 +4,7 @@ $generateButtonColor: #61fed2;
 $bodyBackground: #e6edf5;
 $plusButton: #ff3366;
 $minusButton: #fdc0d0;
+$footerText: #fff;
 
 * {
   box-sizing: border-box;
@@ -30,12 +31,13 @@ body {
 .footerContainer {
   width: 100%;
   background-color: $footerBg;
-  color: #fff;
+  color: $footerText;
   font-size: 2rem;
   display: flex;
   flex-direction: column;
   height: 200px;
   justify-content: center;
+  padding: 10px;
 
   p {
     margin: 15px auto;
@@ -52,13 +54,14 @@ body {
 
     a {
       text-decoration: none;
-      color: #fff;
+      color: $footerText;
       margin: 5px;
     }
   }
 
   a {
     text-decoration: underline;
+    text-underline-offset: 2px;
     margin: 25px auto;
     color: $generateButtonColor;
   }
@@ -66,7 +69,7 @@ body {
 
 @media only screen and (max-width: 570px) {
   .footerContainer {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     height: 150px;
   }
 
@@ -77,6 +80,6 @@ body {
 
 @media only screen and (max-width: 450px) {
   .footerContainer {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }

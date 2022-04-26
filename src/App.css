@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   height: 200px;
   justify-content: center;
+  padding: 10px;
 }
 .footerContainer p {
   margin: 15px auto;
@@ -49,13 +50,14 @@ body {
 }
 .footerContainer a {
   text-decoration: underline;
+  text-underline-offset: 2px;
   margin: 25px auto;
   color: #61fed2;
 }
 
 @media only screen and (max-width: 570px) {
   .footerContainer {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     height: 150px;
   }
 
@@ -65,7 +67,7 @@ body {
 }
 @media only screen and (max-width: 450px) {
   .footerContainer {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
