@@ -3,12 +3,12 @@ function Footer() {
         <section className={'footerContainer'}>
             <p>Designed and built by</p>
             <div>
-                <a>@EthanGarrett</a>
-                <a>@Marcus12934</a>
-                <a>@Grace-P-03</a>
-                <a>@J-Add</a>
+                <a href='https://github.com/Ethan-Garrett'>@Ethan-Garrett</a>
+                <a href='https://github.com/Marcus12934'>@Marcus12934</a>
+                <a href='https://github.com/Grace-p-03'>@Grace-P-03</a>
+                <a href='https://github.com/j-add'>@J-Add</a>
             </div>
-            <a>io-academy.uk</a>
+            <a href='https://io-academy.uk/'>io-academy.uk</a>
         </section>
     );
 }
