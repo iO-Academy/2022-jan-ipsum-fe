@@ -18,6 +18,13 @@ html {
 
 body {
   background-color: $bodyBackground;
+  color: $footerBg;
+}
+
+.title {
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 6rem;
 }
 
 .footerContainer {
@@ -61,6 +68,10 @@ body {
   .footerContainer {
     font-size: 1.6rem;
     height: 150px;
+  }
+
+  .title {
+    font-size: 4rem;
   }
 }
 
