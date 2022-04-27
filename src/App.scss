@@ -1,0 +1,230 @@
+$font: 'Space Grotesk', sans-serif;
+$footerBg: #0f0028;
+$generateButtonColor: #61fed2;
+$bodyBackground: #e6edf5;
+$plusButton: #ff3366;
+$minusButton: #fdc0d0;
+$footerText: #fff;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  font-family: $font;
+  font-weight: 400;
+}
+
+body {
+  background-color: $bodyBackground;
+  color: $footerBg;
+}
+
+.backgroundImage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+}
+
+.title {
+  width: fit-content;
+  margin: 25px auto;
+  font-size: 6rem;
+}
+
+.aboutSection {
+  font-size: 1.8rem;
+  max-width: 725px;
+  width: 55%;
+  min-width: 325px;
+  margin: 15px auto;
+  text-align: center;
+  background-image: url('../public/box-outline.svg');
+  background-size: 100% 100%;
+  background-position: top left;
+  height: fit-content;
+  padding: 10px 20px 40px;
+}
+
+.formTitle {
+  margin: 20px auto;
+  width: fit-content;
+  font-size: 1.8rem;
+
+}
+
+.formSection {
+  margin: 20px auto;
+  max-width: 470px;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+
+
+    input {
+      border: none;
+      background-color: transparent;
+      font-size: 1.8rem;
+      height: 40px;
+      width: auto;
+      padding: 0;
+      margin: 0;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  .inputSection {
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: static;
+
+
+    .numInput {
+      border: solid 2px $footerBg;
+      border-radius: 5px;
+      border-right: none;
+    }
+
+    .plusButton {
+      background-color: $plusButton;
+      font-size: 3rem;
+      width: 40px;
+      position: relative;
+      right: 5px;
+      border-radius: 0;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .minusButton {
+      background-color: $minusButton;
+      font-size: 3rem;
+      width: 40px;
+      position: relative;
+      right: 7px;
+      cursor: pointer;
+    }
+
+  }
+    .generateButton {
+
+      margin: 20px auto;
+
+      input {
+        background-color: $generateButtonColor;
+        font-size: 1.8rem;
+        width: 120px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          color: $footerText;
+        }
+      }
+    }
+}
+
+.paragraphContainer {
+  margin: 40px 0 70px;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.footerContainer {
+  width: 100%;
+  background-color: $footerBg;
+  color: $footerText;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  padding: 10px;
+
+  p {
+    margin: 15px auto;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 45%;
+    margin: 0 auto;
+    border-top: white solid 1px;
+    padding-top: 10px;
+
+    a {
+      text-decoration: none;
+      color: $footerText;
+      margin: 5px;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin: 25px auto;
+    color: $generateButtonColor;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .paragraph {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .footerContainer {
+    font-size: 1.5rem;
+    height: 150px;
+  }
+
+  .aboutSection {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .paragraph {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footerContainer {
+    font-size: 1.2rem;
+  }
+
+  .aboutSection {
+    font-size: 1.2rem;
+    padding: 10px 5px 40px;
+  }
+
+  .paragraph {
+    //font-size: 1.2rem;
+    //line-height: 1.8rem;
+  }
+}

@@ -1,38 +1,198 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #e6edf5;
+  color: #0f0028;
+}
+
+.backgroundImage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
+}
+
+.title {
+  width: fit-content;
+  margin: 25px auto;
+  font-size: 6rem;
+}
+
+.aboutSection {
+  font-size: 1.8rem;
+  max-width: 725px;
+  width: 55%;
+  min-width: 325px;
+  margin: 15px auto;
+  text-align: center;
+  background-image: url("../public/box-outline.svg");
+  background-size: 100% 100%;
+  background-position: top left;
+  height: fit-content;
+  padding: 10px 20px 40px;
+}
+
+.formTitle {
+  margin: 20px auto;
+  width: fit-content;
+  font-size: 1.8rem;
+}
+
+.formSection {
+  margin: 20px auto;
+  max-width: 470px;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.formSection input {
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  height: 40px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formSection h6 {
+  font-size: 1.8rem;
+}
+.formSection .inputSection {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  position: static;
+}
+.formSection .inputSection .numInput {
+  border: solid 2px #0f0028;
+  border-radius: 5px;
+  border-right: none;
+}
+.formSection .inputSection .plusButton {
+  background-color: #ff3366;
+  font-size: 3rem;
+  width: 40px;
+  position: relative;
+  right: 5px;
+  border-radius: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+.formSection .inputSection .minusButton {
+  background-color: #fdc0d0;
+  font-size: 3rem;
+  width: 40px;
+  position: relative;
+  right: 7px;
+  cursor: pointer;
+}
+.formSection .generateButton {
+  margin: 20px auto;
+}
+.formSection .generateButton input {
+  background-color: #61fed2;
+  font-size: 1.8rem;
+  width: 120px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.formSection .generateButton input:hover {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.paragraphContainer {
+  margin: 40px 0 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.paragraph {
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.footerContainer {
+  width: 100%;
+  background-color: #0f0028;
+  color: #fff;
+  font-size: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 200px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+}
+.footerContainer p {
+  margin: 15px auto;
+}
+.footerContainer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-width: 45%;
+  margin: 0 auto;
+  border-top: white solid 1px;
+  padding-top: 10px;
+}
+.footerContainer div a {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+}
+.footerContainer a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin: 25px auto;
+  color: #61fed2;
 }
 
-.App-link {
-  color: #61dafb;
+@media only screen and (max-width: 1000px) {
+  .paragraph {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .footerContainer {
+    font-size: 1.5rem;
+    height: 150px;
+  }
+
+  .aboutSection {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .paragraph {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .footerContainer {
+    font-size: 1.2rem;
+  }
+
+  .aboutSection {
+    font-size: 1.2rem;
+    padding: 10px 5px 40px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=App.css.map */
