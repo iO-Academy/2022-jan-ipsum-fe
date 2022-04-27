@@ -1,4 +1,5 @@
 import {useState} from "react";
+import ParaText from "../ParaText/ParaText";
 
 function ParaGenerate() {
 
@@ -34,8 +35,8 @@ function ParaGenerate() {
                 <input type="submit" value="Generate" />
             </div>
         </div>
-            <div>
-                <ParaGenerate />
+            <div className='paragraphContainer'>
+                <ParaText />
             </div>
         </>
     )

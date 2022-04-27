@@ -135,7 +135,18 @@ body {
         }
       }
     }
+}
 
+.paragraphContainer {
+  margin: 40px 0 70px;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 .footerContainer {
@@ -177,6 +188,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .paragraph {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 570px) {
   .footerContainer {
     font-size: 1.5rem;
@@ -190,6 +207,10 @@ body {
   .title {
     font-size: 4rem;
   }
+
+  .paragraph {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -200,5 +221,10 @@ body {
   .aboutSection {
     font-size: 1.2rem;
     padding: 10px 5px 40px;
+  }
+
+  .paragraph {
+    //font-size: 1.2rem;
+    //line-height: 1.8rem;
   }
 }
