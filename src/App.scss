@@ -51,6 +51,104 @@ body {
   padding: 10px 20px 40px;
 }
 
+.formTitle {
+  margin: 20px auto;
+  width: fit-content;
+  font-size: 1.8rem;
+
+}
+
+.formSection {
+  margin: 20px auto;
+  max-width: 470px;
+  justify-content: space-between;
+  font-size: 1.8rem;
+  display: flex;
+  flex-wrap: wrap;
+
+
+    input {
+      border: none;
+      background-color: transparent;
+      font-size: 1.8rem;
+      height: 40px;
+      width: auto;
+      padding: 0;
+      margin: 0;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  .inputSection {
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    position: static;
+
+
+    .numInput {
+      border: solid 2px $footerBg;
+      border-radius: 5px;
+      border-right: none;
+    }
+
+    .plusButton {
+      background-color: $plusButton;
+      font-size: 3rem;
+      width: 40px;
+      position: relative;
+      right: 5px;
+      border-radius: 0;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .minusButton {
+      background-color: $minusButton;
+      font-size: 3rem;
+      width: 40px;
+      position: relative;
+      right: 7px;
+      cursor: pointer;
+    }
+
+  }
+    .generateButton {
+
+      margin: 20px auto;
+
+      input {
+        background-color: $generateButtonColor;
+        font-size: 1.8rem;
+        width: 120px;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          color: $footerText;
+        }
+      }
+    }
+}
+
+.paragraphContainer {
+  margin: 40px 0 70px;
+}
+
+.paragraph {
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
 .footerContainer {
   width: 100%;
   background-color: $footerBg;
@@ -90,6 +188,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .paragraph {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 570px) {
   .footerContainer {
     font-size: 1.5rem;
@@ -103,6 +207,10 @@ body {
   .title {
     font-size: 4rem;
   }
+
+  .paragraph {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -113,5 +221,10 @@ body {
   .aboutSection {
     font-size: 1.2rem;
     padding: 10px 5px 40px;
+  }
+
+  .paragraph {
+    //font-size: 1.2rem;
+    //line-height: 1.8rem;
   }
 }
