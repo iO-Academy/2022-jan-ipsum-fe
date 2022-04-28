@@ -12,6 +12,8 @@ html {
 body {
   background-color: #e6edf5;
   color: #0f0028;
+  position: static;
+  overflow: auto;
 }
 
 .backgroundImage {
@@ -127,6 +129,8 @@ body {
 }
 
 .footerContainer {
+  position: relative;
+  bottom: 0;
   width: 100%;
   background-color: #0f0028;
   color: #fff;
