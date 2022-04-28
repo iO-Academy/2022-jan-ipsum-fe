@@ -1,5 +1,6 @@
 import {useState, useEffect} from "react";
 import ParaText from "../ParaText/ParaText";
+import {specialCharMap} from "@testing-library/user-event/dist/keyboard";
 
 function ParaGenerate() {
 
@@ -34,7 +35,11 @@ function ParaGenerate() {
     }
 
     const inputValidate = (e) => {
-            let pressedKey = parseInt(e.key)
+        let pressedKey = parseInt(e.key)
+        let char = e.charCode
+        if (char === 13) {
+            getIpsumData()
+        }
         if (inputValue === 1 && pressedKey === 0) {
             let num = pressedKey.toString()
             let value = inputValue + num
