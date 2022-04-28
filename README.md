@@ -1,7 +1,7 @@
 # iO Academipsum
 
 ## Description
-iO Academipsum is a React application that uses a custom API (https://github.com/iO-Academy/2022-jan-ipsum-be) to generate our Academy inspired Lorem Ipsum. Great for filling out placeholder text in all your new projects. There are a wide range of phrases ranging from common technologies and phrases used inside the Academy to a few inside jokes that only a select few students/tutors will understand.
+iO Academipsum is a React application that uses a custom API (https://github.com/iO-Academy/2022-jan-ipsum-be) to generate our Academy inspired Lorem Ipsum. Great for filling out placeholder text in all your new projects. There are a wide range of phrases ranging from common technologies and phrases used inside the Academy to a few inside jokes that only a select few students/trainers will understand.
 
 Have fun!
 
