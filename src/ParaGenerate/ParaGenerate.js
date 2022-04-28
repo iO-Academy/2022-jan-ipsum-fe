@@ -1,9 +1,21 @@
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import ParaText from "../ParaText/ParaText";
 
 function ParaGenerate() {
 
+    const [ipsumData, setIpsumData] = useState([])
     const [inputValue, setInputValue] = useState(1)
+
+    useEffect(() => {
+        getIpsumData()
+    }, [])
+
+    const getIpsumData = async () => {
+        const response = await fetch('http://localhost:3002/ipsum')
+        let result = await response.json()
+
+        setIpsumData(result.data)
+    }
 
     const plusButtonFunction = () => {
         let number = inputValue +1
@@ -20,7 +32,9 @@ function ParaGenerate() {
         }
         setInputValue(number)
     }
-    
+
+
+    console.log(ipsumData)
 
     return (
         <>
