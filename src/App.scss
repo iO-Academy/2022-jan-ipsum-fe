@@ -20,11 +20,14 @@ html {
 body {
   background-color: $bodyBackground;
   color: $footerBg;
-  position: static;
+  position: relative;
   overflow: auto;
   background-image: url('../public/background-squigle.svg');
   background-attachment: fixed;
   background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  padding-bottom: 200px;
 }
 
 .title {
@@ -146,10 +149,10 @@ body {
 }
 
 .footerContainer {
-  position: relative;
+  position: absolute;
   bottom: 0;
-  //right: 0;
-  //left: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   background-color: $footerBg;
   color: $footerText;
@@ -195,6 +198,11 @@ body {
 }
 
 @media only screen and (max-width: 570px) {
+
+  body {
+    padding-bottom: 150px;
+  }
+
   .footerContainer {
     font-size: 1.5rem;
     height: 150px;
