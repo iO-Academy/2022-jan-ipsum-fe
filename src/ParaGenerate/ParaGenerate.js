@@ -11,7 +11,7 @@ function ParaGenerate() {
     }, [])
 
     const getIpsumData = async () => {
-        const response = await fetch('http://localhost:3002/ipsum')
+        const response = await fetch('http://localhost:3002/ipsum?paragraphs=' + inputValue)
         let result = await response.json()
 
         setIpsumData(result.data)
@@ -44,6 +44,13 @@ function ParaGenerate() {
             setInputValue(pressedKey)
         }
     }
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        if(inputValue <= 10 && inputValue >= 1 && typeof(inputValue) === "number") {
+            getIpsumData(inputValue)
+        }
+    }
     
 
     return (
@@ -51,12 +58,12 @@ function ParaGenerate() {
         <h6 className="formTitle">How many paragraphs do you need?</h6>
         <div className='formSection'>
             <div className="inputSection">
-                <input type="text" value={inputValue} max="10" min="1" className="numInput" onKeyPress={inputValidate} />
+                <input type="text" readOnly value={inputValue} max="10" min="1" className="numInput" onKeyPress={inputValidate} />
                 <input type="button" value="+" className="plusButton" onClick={plusButtonFunction} />
                 <input type="button" value="-" className="minusButton" onClick={minusButtonFunction} />
             </div>
             <div className="generateButton">
-                <input type="submit" value="Generate" />
+                <input type="submit" value="Generate" onClick={handleClick}/>
             </div>
         </div>
             <div className='paragraphContainer'>
