@@ -1,15 +1,9 @@
-# Getting Started with Create React App
+# Setting up the React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Download the repo and its associated back end (found at )
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Run
+###npm i 
+- To install project dependancies
+###npm start
+- To start the react app, you will be able to view the application on localhost (usually port 3000 but depends on your locale setup)
