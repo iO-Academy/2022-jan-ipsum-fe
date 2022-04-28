@@ -51,7 +51,7 @@ function ParaGenerate() {
         <h6 className="formTitle">How many paragraphs do you need?</h6>
         <div className='formSection'>
             <div className="inputSection">
-                <input type="text" value={inputValue} max="10" min="1" className="numInput" onKeyPress={inputValidate} />
+                <input type="text" readOnly value={inputValue} max="10" min="1" className="numInput" onKeyPress={inputValidate} />
                 <input type="button" value="+" className="plusButton" onClick={plusButtonFunction} />
                 <input type="button" value="-" className="minusButton" onClick={minusButtonFunction} />
             </div>
