@@ -22,15 +22,9 @@ body {
   color: $footerBg;
   position: static;
   overflow: auto;
-}
-
-.backgroundImage {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: auto;
-  z-index: -1;
+  background-image: url('../public/background-squigle.svg');
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .title {
