@@ -20,6 +20,8 @@ html {
 body {
   background-color: $bodyBackground;
   color: $footerBg;
+  position: static;
+  overflow: auto;
 }
 
 .backgroundImage {
@@ -150,6 +152,10 @@ body {
 }
 
 .footerContainer {
+  position: relative;
+  bottom: 0;
+  //right: 0;
+  //left: 0;
   width: 100%;
   background-color: $footerBg;
   color: $footerText;
@@ -223,8 +229,4 @@ body {
     padding: 10px 5px 40px;
   }
 
-  .paragraph {
-    //font-size: 1.2rem;
-    //line-height: 1.8rem;
-  }
 }
