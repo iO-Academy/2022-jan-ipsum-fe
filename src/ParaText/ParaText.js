@@ -1,8 +1,10 @@
 const ParaText = (props) => {
 
     const dataToString = (data) => {
+        let key = 0;
         return data.map((data) => {
-            return <div className="paragraph"><p>{data}</p></div>
+            key = key + 1;
+            return <div className="paragraph" key={key}><p>{data}</p></div>
         });
     }
 
