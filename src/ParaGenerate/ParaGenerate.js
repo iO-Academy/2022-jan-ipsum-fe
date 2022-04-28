@@ -11,7 +11,7 @@ function ParaGenerate() {
     }, [])
 
     const getIpsumData = async () => {
-        const response = await fetch('http://localhost:3002/ipsum?paragraphs={inputValue}')
+        const response = await fetch('http://localhost:3002/ipsum?paragraphs=' + inputValue)
         let result = await response.json()
 
         setIpsumData(result.data)
