@@ -1,16 +1,16 @@
-# ioAcadumipsum
+# iO Academipsum
 
 ## Description
-IoAcadumipsum is a React application that uses our custom API to generate our academy inspired Lorum Ipsum. Great for filling out text in all your new projects. There are a wide range of phrases ranging from common technologies and phrases used inside the academy to a few inside jokes that only a select few students/tutors will understand.
+iO Academipsum is a React application that uses a custom API (https://github.com/iO-Academy/2022-jan-ipsum-be) to generate our Academy inspired Lorem Ipsum. Great for filling out placeholder text in all your new projects. There are a wide range of phrases ranging from common technologies and phrases used inside the Academy to a few inside jokes that only a select few students/tutors will understand.
+
+Have fun!
 
 ## Getting Started
 
 ### Dependencies
 
-    - MongoDB
-    - JSX
     - SASS version 1.49+
-    - Node API found here (https://github.com/iO-Academy/2022-jan-ipsum-be)
+    - Custom API found here (https://github.com/iO-Academy/2022-jan-ipsum-be)
 
 ### Installing
 Clone this repo:
