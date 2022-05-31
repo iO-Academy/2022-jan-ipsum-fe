@@ -8,14 +8,17 @@ function ParaGenerate() {
     const [inputValue, setInputValue] = useState(1)
 
     useEffect(() => {
-        getIpsumData()
-    }, [])
+        (async () => {
+            const data = await getIpsumData();
+            setIpsumData(data);
+        })();
+    }, []);
 
     const getIpsumData = async () => {
         const response = await fetch('http://localhost:3002/ipsum?paragraphs=' + inputValue)
         let result = await response.json()
 
-        setIpsumData(result.data)
+        return result.data
     }
 
     const plusButtonFunction = () => {
