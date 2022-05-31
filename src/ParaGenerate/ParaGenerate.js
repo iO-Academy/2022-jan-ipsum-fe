@@ -11,7 +11,7 @@ function ParaGenerate() {
         (async () => {
             const data = await getIpsumData();
             setIpsumData(data);
-        })();
+        })()
     }, []);
 
     const getIpsumData = async () => {
@@ -41,7 +41,10 @@ function ParaGenerate() {
         let pressedKey = parseInt(e.key)
         let char = e.charCode
         if (char === 13) {
-            getIpsumData()
+            (async () => {
+                const data = await getIpsumData();
+                setIpsumData(data);
+            })()
         }
         if (inputValue === 1 && pressedKey === 0) {
             let num = pressedKey.toString()
@@ -56,7 +59,10 @@ function ParaGenerate() {
     const handleClick = (e) => {
         e.preventDefault()
         if(inputValue <= 10 && inputValue >= 1 && typeof(inputValue) === "number") {
-            getIpsumData(inputValue)
+            (async () => {
+                const data = await getIpsumData();
+                setIpsumData(data);
+            })()
         }
     }
     
